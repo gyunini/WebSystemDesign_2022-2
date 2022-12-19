@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>survey</title>
+</head>
+<body>
+    <form action="http://localhost:3000/submit_success" method="POST">
+        이름<input type="text" name="name" placeholder="이름을 입력하세요" /> <!--입력하지 않으면 제출 불가-->
+        <br/>
+        학번<input type="password" name="stdId" />
+        <br/>
+        나이<input type="number" name="age" />
+        <br/>
+        학과
+        <input type="radio" name="major" id="major" value="소프트웨어학과" /><label for="software">소프트웨어학과</label>
+        <input type="radio" name="major" id="major" value="미디어학과"><label for="media">미디어학과</label>
+        <input type="radio" name="major" id="major" value="사이버보안학과"><label for="ciberSecurity">사이버보안학과</label>
+        <input type="radio" name="major" id="major" value="산업공학과"><label for="IndustrialEngineering">산업공학과</label>
+        <br/>
+        수강과목
+        <input type="checkbox" name="subject" id="subject" value="웹시스템설계"><label for="web">웹시스템설계</label>
+        <input type="checkbox" name="subject" id="subject" value="운영체제"><label for="os">운영체제</label>
+        <input type="checkbox" name="subject" id="subject" value="인공지능"><label for="ai">인공지능</label>
+        <input type="checkbox" name="subject" id="subject" value="소프트웨어공학"><label for="swEngineering">소프트웨어공학</label>
+        <input type="checkbox" name="subject" id="subject" value="데이터베이스"><label for="DB">데이터베이스</label>
+        <br/>
+        <input type="submit" value="제출" />
+    </form>
+    <form action="http://localhost:3000/survey_statics" method="post">
+        <input type="submit" value="통계확인" />
+    </form>
+</body>
+</html>
