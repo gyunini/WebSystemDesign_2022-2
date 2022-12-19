@@ -1,3 +1,6 @@
 [submodule "Lab12/frontend/Lab13/frontend"]
 	path = Lab12/frontend/Lab13/frontend
 	url = https://github.com/gyunini/WebSystemDesign_2022-2.git
+[submodule "Lab13/Lab13/frontend"]
+	path = Lab13/Lab13/frontend
+	url = https://github.com/gyunini/WebSystemDesign_2022-2.git
